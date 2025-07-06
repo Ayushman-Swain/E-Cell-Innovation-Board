@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 4em ;
+    padding: 1em ;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    position: fixed;
+}
+.nav-bar .logo{
+    width: 3rem;
+}
+.nav-bar .nav-list{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    cursor: pointer;
+}
+.nav-bar .nav-list li{
+    margin: 0 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.nav-bar .nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero{
+    background-image: url(hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero-content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 35% ;
+    left: 10%;
+}
+.hero-content h1{
+    font-style: italic;
+    font-size: 100px;
+    padding-bottom: 1rem;
+}
+.hero-content h2{
+    font-size: 50px;
+    font-weight: 1000;
+    padding-left: 7rem;
+}
+.scroll{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 10em;
+    font-size: 90px;
+}
+.about{
+    padding-bottom: 2rem;
+}
+.heading{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0 0;
+    border-bottom: 2px solid red;
+    margin-bottom: 3rem;
+}
+.heading h1{
+    font-size: 50px;
+}
+.heading h3{
+    font-size: 30px;
+}
+.article-content{
+    width: 80vw;
+    margin:auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.article-content ul{
+    list-style: square;
+    margin: 1rem 0 1rem 0;
+}
+/* .idea-section{
+    background-color: blue;
+} */
+.section-heading{
+    width: 60%;
+    margin: 2rem 0 3rem 3rem;
+    border-bottom: 2px solid red;
+    padding:0 0 0.5rem 1rem;
+    font-size: 35px;
+}
+/* .idea-cards{
+    height: 50vh;
+    background-color: brown;
+} */
+.form-liner{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.form-div{
+    text-align: center;
+    width: 35%;
+    margin: 2vw auto;
+    background-image: url(form-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px 30px;
+    /* box-shadow: 0 8px 32px rgb(9, 200, 214); */
+}
+.input{
+    margin-bottom: 20px;
+}
+.input-field{
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+    color: rgba(234, 226, 226, 0.807);
+    font-size: 15px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: rgba(234, 226, 226, 0.807);
+}
+button{
+    width: 50%;
+    margin: 20px auto 0 auto;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+}
+.footer{
+    background-color: rgb(95, 255, 95);
+    position: relative;
+    height: auto;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+.footer-logo{
+    width: 9rem;
+    margin-top: 1rem ;
+    margin-left: 1rem ;
+}
+.contact-info{
+    margin: 3rem;
+}
+.contact-info h2{
+    font-size: 30px;
+}
+.contact-info ul{
+    list-style: none;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+.contact-info ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #1e90ff;
+  color: rgb(88, 84, 84);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.scroll-top:hover {
+  background-color: #00bfff;
+  transform: scale(1.1);
+}
