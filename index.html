@@ -18,12 +18,12 @@
     <header class="hero">
       <!-- nav bar -->
       <nav class="nav-bar">
-        <a href="index.html"><img class="logo" src="logo.png" alt="Logo" /></a>
+        <a href="#"><img class="logo" src="logo.png" alt="Logo" /></a>
         <ul class="nav-list">
-          <li><a href="/index.html">HOME</a></li>
-          <li><a>ABOUT</a></li>
-          <li><a>IDEAS</a></li>
-          <li><a>FORM</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#idea">IDEAS</a></li>
+          <li><a href="#form">FORM</a></li>
         </ul>
       </nav>
       <!-- hero -->
@@ -31,10 +31,17 @@
         <h1>E-CELL</h1>
         <h2>Innovation Board</h2>
       </div>
-      <div class="scroll">Think <br />Idea <br />Innovate</div>
+      <div class="hero-message">
+  <ul class="scroll">
+    <li>Think</li>
+    <li>Idea</li>
+    <li>Innovate</li>
+  </ul>
+</div>
+
     </header>
     <!-- About -->
-    <article class="about">
+    <article class="about" id="about">
       <div class="heading">
         <h1>ABOUT</h1>
       </div>
@@ -72,7 +79,7 @@
           <li>Support a community that believes in learning by doing.</li>
         </ul>
         <p>
-          <b>Our Belief</b
+          <b><u>Our Belief</u></b
           ><br /><b><i>
             "You don't need to be funded to be a founder. You just need to
             start."</i></b><br />
@@ -84,20 +91,23 @@
       </div>
     </article>
     <!-- Ideas -->
-    <section class="idea-section">
+    <section class="idea-section" id="idea">
       <div class="section-heading">
         <h3>START-UP IDEAS</h3>
       </div>
-      <div id="idea-pane">
-        <div class="idea-cards">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      <div class="filter">
+        <input type="text" class="search" placeholder="Search Idea">
+      <select class="categoryFilter">
+             <option value="All">Category🔍</option>
+             <option value="Tech">Tech</option>
+             <option value="Social">Social</option>
+             <option value="EdTech">EdTech</option>
+      </select>
       </div>
+      <div class="cards-set"></div>
     </section>
     <!-- Form -->
-    <div class="heading">
+    <div class="heading" id="form">
       <h1>Submit Your Idea💡</h1>
     </div>
     <h2 class="form-liner">From thought to action-your idea could change the world.</h2>
@@ -112,9 +122,9 @@
         <div class="input">
         <select name="category" required class="input-field">
           <option value="" disabled selected hidden>--Choose Category--</option>
-          <option value="Tech" style="background-color: rgba(117, 111, 111, 0.678);">Tech</option>
-          <option value="EdTech" style="background-color: rgba(117, 111, 111, 0.678);">EdTech</option>
-          <option value="Social" style="background-color: rgba(117, 111, 111, 0.678);">Social</option>
+          <option value="Tech" style="background-color: #ffffff;">Tech</option>
+          <option value="EdTech" style="background-color: #ffffff;">EdTech</option>
+          <option value="Social" style="background-color: #ffffff;">Social</option>
         </select>
         </div>
         <div class="input">
@@ -133,7 +143,7 @@
     <!-- Footer - Contact Details -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-logo"><a href="index.html"><img class="footer-logo" src="logo.png" alt="Logo"></a>
+        <div class="logo"><a href="#"><img class="footer-logo" src="logo.png" alt="Logo"></a>
         </div>
         <div class="contact-info">
           <h2>Query?Reach Us</h2>
@@ -172,5 +182,6 @@
         <i class="fa-solid fa-caret-up fa-bounce fa-xl"></i>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
