@@ -7,7 +7,7 @@ Welcome to the **E-Cell Innovation Board**, a responsive and interactive fronten
 
 ## 📸 Preview
 
-🌐 **Live Demo**: [https://yourusername.github.io/ecell-innovation-board](https://yourusername.github.io/ecell-innovation-hub)
+🌐 **Live Demo**: [https://ayushman-swain.github.io/E-Cell-Innovation-Board/](https://ayushman-swain.github.io/E-Cell-Innovation-Board/)
 
 ---
 
@@ -30,7 +30,7 @@ ecell-innovation-board/
 
 Clone the repository:
 ``` 
-   git clone https://github.com/your-username/ecell-innovation-board.git
+   git clone https://github.com/ayushman-swain/ecell-innovation-board.git
    cd ecell-innovation-board
 ```
 
