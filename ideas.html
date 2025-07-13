@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Idea Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="details-container">
+      <h2 id="idea-name"></h2>
+      <p><strong>Pitch:</strong> <span id="pitch"></span></p>
+      <p>
+        <strong>Category:</strong> <span id="category" class="badge-detail"></span>
+      </p>
+      <p><strong>Description:</strong> <span id="description"></span></p>
+      <p><strong>Email:</strong> <a id="email" href=""></a></p>
+      <p><strong>Website:</strong> <a id="website" target="_main"></a></p>
+      <a href="index.html#idea" class="back-btn">← Back to Ideas</a>
+    </div>
+
+    <script src="ideas.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get("id"));
+      const idea = ideas[id];
+
+      if (idea) {
+        document.querySelector("#idea-name").textContent = idea.name;
+        document.querySelector("#pitch").textContent = idea.pitch;
+        document.querySelector("#category").textContent = idea.category;
+        document.querySelector("#description").textContent = idea.description;
+        document.querySelector("#email").textContent = idea.email;
+        document.querySelector("#email").href = `mailto:${idea.email}`;
+        document.querySelector("#website").textContent =
+          idea.website || "Not Provided";
+        if (idea.website) {
+          document.querySelector("#website").href = idea.website;
+          document.querySelector("#website").target = "_blank";
+        } else {
+          document.querySelector("#website").removeAttribute("href");
+          document.querySelector("#website").style.opacity = "0.6";
+        }
+      }
+      else {
+        document.body.innerHTML =
+          "<h2 style='text-align:center; margin-top:5rem;'>Idea Not Found</h2>";
+      }
+    </script>
+  </body>
+</html>

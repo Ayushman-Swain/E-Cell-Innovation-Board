@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A platform to showcase innovative startup ideas. Search, filter, and explore great ideas">
+    <title>E-Cell Innovation Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header Part-->
+    <header class="hero">
+      <!-- nav bar -->
+      <nav class="nav-bar">
+        <a href="#"><img class="logo" src="logo.png" alt="Logo" /></a>
+        <div class="toggle"><i class="fa-solid fa-bars fa-xl" class="toggle-icon"></i></div>
+        <ul class="nav-list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#idea">IDEAS</a></li>
+          <li><a href="#form">FORM</a></li>
+        </ul>
+      </nav>
+      <!-- hero -->
+      <div class="hero-content">
+        <h1>E-CELL</h1>
+        <h2>Innovation Board</h2>
+      </div>
+      <div class="hero-message">
+  <ul class="scroll">
+    <li>Think</li>
+    <li>Idea</li>
+    <li>Innovate</li>
+  </ul>
+</div>
+    </header>
+    <!-- About -->
+    <article class="about" id="about">
+      <div class="heading">
+        <h1>ABOUT</h1>
+      </div>
+      <div class="article-content">
+        <p>
+          <b><i>"An idea is the beginning of everything remarkable."</i></b
+          ><br />The Ecell Innovation Board is a digital stage for the thinkers,
+          builders, and dreamers of tomorrow. Created with the vision to spark a
+          culture of entrepreneurial thinking in students, this platform is
+          dedicated to showcasing ideas that challenge the norm and drive
+          change. Here, innovation meets imagination—from technology that
+          transforms to solutions that empower communities. Whether you're a
+          coder, designer, problem solver, or just someone with a brilliant
+          idea, the Innovation Board is where your journey begins.
+          <pre>💭Think beyond limits-imagine a better world.
+💡Innovate fearlessly-experiment, iterate, and create.
+🚀Share your idea-because the next big thing could start with you.</pre>
+           At its core, this platform is about collaboration and inspiration. Discover startups from fellow students, filter by interests like Tech, Social, and EdTech, and connect through shared passion. Whether you're looking to launch your first idea, gather feedback, or simply explore what others are building — Ecell Innovation Board is your launchpad to impact.
+        </p>
+      </div>
+      <div class="heading">
+        <h3>OUR AIM</h3>
+      </div>
+      <div class="article-content">
+        <p>
+          In a world full of untapped ideas, many never see the light of day. We
+          built this platform to bridge that gap-to turn casual sparks of
+          creativity into visible, valued, and potentially transformative
+          projects. We aim to:
+        </p>
+        <ul>
+          <li>Encourage students to think beyond academics.</li>
+          <li>Provide a digital space to showcase early ideas.</li>
+          <li>Inspire collaboration among young entrepreneurs.</li>
+          <li>Support a community that believes in learning by doing.</li>
+        </ul>
+        <p>
+          <b><u>Our Belief</u></b
+          ><br /><b><i>
+            "You don't need to be funded to be a founder. You just need to
+            start."</i></b><br />
+          At the Ecell Innovation Board, we believe in action over perfection.
+          The next big idea could be scribbled on a notebook, built in a dorm
+          room, or submitted here. If you have something in mind-no matter how
+          raw or small-this is your sign to think it, shape it, and share it.
+        </p>
+      </div>
+    </article>
+    <!-- Ideas -->
+    <section class="idea-section" id="idea">
+      <div class="section-heading">
+        <h3>START-UP IDEAS</h3>
+      </div>
+      <div class="filter">
+        <input type="text" class="search" placeholder="Search Idea">
+      <select class="categoryFilter">
+             <option value="All">Category🔍</option>
+             <option value="Tech">Tech</option>
+             <option value="Social">Social</option>
+             <option value="EdTech">EdTech</option>
+      </select>
+      </div>
+      <div class="cards-set"></div>
+    </section>
+    <!-- Form -->
+    <div class="heading" id="form">
+      <h1>Submit Your Idea💡</h1>
+    </div>
+    <h2 class="form-liner">From thought to action-your idea could change the world.</h2>
+    <div class="form-div">
+      <form class="form-container">
+        <div class="input">
+        <input type="text" name="startUp-name" class="input-field" required placeholder="StartUp Idea Name" />
+        </div>
+        <div class="input">
+        <input type="text" name="pitch" class="input-field" required placeholder="One-Liner Pitch" />
+        </div>
+        <div class="input">
+        <select name="category" required class="input-field">
+          <option value="" disabled selected hidden>--Choose Category--</option>
+          <option value="Tech" style="background-color: #ffffff;">Tech</option>
+          <option value="EdTech" style="background-color: #ffffff;">EdTech</option>
+          <option value="Social" style="background-color: #ffffff;">Social</option>
+        </select>
+        </div>
+        <div class="input">
+        <textarea name="description" class="input-field" required placeholder="Description"></textarea>
+        </div>
+        <div class="input">
+        <input type="email" name="email" class="input-field" required placeholder="Email" />
+        </div>
+        <div class="input">
+        <input type="url" name="website-url" class="input-field" placeholder="Website (optional)" />
+        </div>
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </div>
+
+    <!-- Footer - Contact Details -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo"><a href="#"><img class="footer-logo" src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="contact-info">
+          <h2>Query?Reach Us</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i
+              ><span> ecellinnovation@organisation.in</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i><span> +91 87923-XXXXX</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h2>Social Handles</h2>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_main"
+            ><i class="fa-brands fa-square-facebook"></i
+            ><span> Facebook</span></a>
+            </li>
+            <li>
+              <a
+            href="https://www.instagram.com/accounts/login/?hl=en"
+            target="_main"
+            ><i class="fa-brands fa-instagram"></i><span> Instagram</span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/login" target="_main"
+            ><i class="fa-brands fa-linkedin"></i><span> LinkedIn</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="scroll-top">
+        <i class="fa-solid fa-caret-up fa-bounce fa-xl"></i>
+      </div>
+    </footer>
+    <script src="ideas.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
