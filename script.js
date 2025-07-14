@@ -66,13 +66,14 @@ function displayIdeaCards(data) {
       <p class="category"><b>Category:</b> <span class="badge-card">${
         idea.category
       }</span></p>
-      <a href="ideas.html?id=${idea.id}"><span class="more-btn">+</span></a>
+      <span class="more-btn">+</span>
     `;
-
     cardsSet.appendChild(card);
+    card.addEventListener("click", () => {
+      window.location.href = `ideas.html?id=${idea.id}`;
+    });
   });
 }
-
 
 displayIdeaCards(ideas);
 
@@ -113,8 +114,8 @@ form.addEventListener("submit", (event) => {
   form.reset();
 
   setTimeout(() => {
-    location.href="#form";
-  },500);
+    location.href = "#form";
+  }, 500);
 });
 
 //Nav Bar Toggle
@@ -126,7 +127,7 @@ const navLogo = document.querySelector(".logo");
 toggle.addEventListener("click", () => {
   naviBar.classList.add("open");
 });
-navList.forEach(list => {
+navList.forEach((list) => {
   list.addEventListener("click", () => {
     naviBar.classList.remove("open");
   });
@@ -134,4 +135,3 @@ navList.forEach(list => {
 navLogo.addEventListener("click", () => {
   naviBar.classList.remove("open");
 });
-
